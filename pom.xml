@@ -61,6 +61,9 @@
               <goal>jlink</goal>
             </goals>
             <configuration>
+              <noHeaderFiles>true</noHeaderFiles>
+              <noManPages>true</noManPages>
+              <stripDebug>true</stripDebug>
               <launcher>jlox=org.iqraalabs.jlox/org.iqraalabs.jlox.Main</launcher>
               <classifier>linux</classifier>
             </configuration>
