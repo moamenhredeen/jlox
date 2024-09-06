@@ -17,6 +17,10 @@
   "associatedIndex": 8
 }]]></component>
   <component name="ProjectId" id="2lfryHdFifqAVVNAaQHF22r78Ux" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -83,6 +87,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="replace gradle with maven and configure jlink to generate custom jre" />
     <MESSAGE value="simple cli arguments handler" />
-    <option name="LAST_COMMIT_MESSAGE" value="simple cli arguments handler" />
+    <MESSAGE value="test cli type" />
+    <MESSAGE value="add main class" />
+    <MESSAGE value="define module" />
+    <MESSAGE value="update intellij config" />
+    <option name="LAST_COMMIT_MESSAGE" value="update intellij config" />
   </component>
 </project>
