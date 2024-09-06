@@ -19,4 +19,4 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
     - name: Build with Maven Wrapper
-      run: ./mvnw build
+      run: ./mvnw package
