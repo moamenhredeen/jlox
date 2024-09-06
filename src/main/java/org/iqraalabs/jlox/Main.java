@@ -1,9 +1,13 @@
 package org.iqraalabs.jlox;
 
+import java.io.*;
+
 public class Main
 {
-	public static void main(String[] args)
+	public static void main(String[] args) throws IOException
 	{
-		System.out.println("hello world");
+		var writer = new BufferedWriter(new OutputStreamWriter(System.out));
+		var cli = new CLI(args, writer);
+		cli.run();
 	}
 }
