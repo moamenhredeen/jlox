@@ -1,4 +1,4 @@
-package org.iqraalabs.jlox;
+package org.levelup.jlox;
 
 import java.io.IOException;
 import java.io.Writer;

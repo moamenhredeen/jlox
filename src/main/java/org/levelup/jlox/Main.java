@@ -1,9 +1,6 @@
-package org.iqraalabs.jlox;
+package org.levelup.jlox;
 
 import java.io.*;
-import java.util.List;
-import java.util.function.Consumer;
-import java.util.function.Function;
 
 public class Main
 {

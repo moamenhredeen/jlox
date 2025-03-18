@@ -1,2 +1,2 @@
-module org.iqraalabs.jlox {
+module org.levelup.jlox {
 }

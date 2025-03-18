@@ -10,7 +10,7 @@
  
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.release>21</maven.compiler.release>
+    <maven.compiler.release>23</maven.compiler.release>
   </properties>
  
   <dependencyManagement>
@@ -64,7 +64,7 @@
               <noHeaderFiles>true</noHeaderFiles>
               <noManPages>true</noManPages>
               <stripDebug>true</stripDebug>
-              <launcher>jlox=org.iqraalabs.jlox/org.iqraalabs.jlox.Main</launcher>
+              <launcher>jlox=org.iqraalabs.jlox/org.levelup.jlox.Main</launcher>
               <classifier>linux</classifier>
             </configuration>
           </execution>

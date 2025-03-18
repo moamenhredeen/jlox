@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbc07560-0e8d-4c37-9b43-2c3aa28565ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/iqraalabs/jlox/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/iqraalabs/jlox/CommandLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/iqraalabs/jlox/RunCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/iqraalabs/jlox/CommandLineTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/iqraalabs/jlox/CLI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/iqraalabs/jlox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iqraalabs/jlox/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/iqraalabs/jlox/CLITest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/iqraalabs/jlox/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/levelup/jlox/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/iqraalabs/jlox/CommandLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/levelup/jlox/CommandLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/iqraalabs/jlox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/levelup/jlox/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/iqraalabs/jlox/RunCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/levelup/jlox/RunCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/iqraalabs/jlox/CommandLineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/levelup/jlox/CommandLineTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,19 +60,28 @@
     "Application.test.executor": "Run",
     "JUnit.CLITest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/moamen.hraden/iqraalabs/jlox",
+    "last_opened_file_path": "/Users/moamenhredeen/git-repos/jlox",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -187,8 +197,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.59" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.59" />
       </set>
     </attachedChunks>
   </component>
@@ -201,6 +211,9 @@
       <option name="presentableId" value="Default" />
       <updated>1725633313460</updated>
       <workItem from="1725633314807" duration="4795000" />
+      <workItem from="1742285743695" duration="43000" />
+      <workItem from="1742285790776" duration="81000" />
+      <workItem from="1742285875655" duration="533000" />
     </task>
     <servers />
   </component>
@@ -215,5 +228,8 @@
     <MESSAGE value="define module" />
     <MESSAGE value="update intellij config" />
     <option name="LAST_COMMIT_MESSAGE" value="update intellij config" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
   </component>
 </project>

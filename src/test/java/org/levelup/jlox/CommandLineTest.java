@@ -1,10 +1,8 @@
-package org.iqraalabs.jlox;
+package org.levelup.jlox;
 
 import org.junit.jupiter.api.Test;
 
 import java.io.StringWriter;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class CommandLineTest
 {

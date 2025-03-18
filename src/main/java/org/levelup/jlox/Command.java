@@ -1,4 +1,4 @@
-package org.iqraalabs.jlox;
+package org.levelup.jlox;
 
 @FunctionalInterface
 public interface Command
