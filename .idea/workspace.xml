@@ -5,15 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbc07560-0e8d-4c37-9b43-2c3aa28565ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/cli/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/cli/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/cli/src/main/java/org/levelup/jlox/cli/EvalCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/cli/src/main/java/org/levelup/jlox/cli/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/cli/src/main/java/org/levelup/jlox/cli/ReplCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/cli/src/main/java/org/levelup/jlox/cli/RootCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/cli/src/main/java/org/levelup/jlox/cli/RunCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/vm/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/vm/src/main/java/org/levelup/jlox/vm/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/vm/src/main/java/org/levelup/jlox/vm/TokenType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/vm/src/main/java/org/levelup/jlox/vm/Tokenizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/vm/src/test/java/org/levelup/jlox/vm/TokenizerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/iqraalabs/jlox/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/levelup/jlox/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/iqraalabs/jlox/CommandLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/levelup/jlox/CommandLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/iqraalabs/jlox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/levelup/jlox/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/iqraalabs/jlox/RunCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/levelup/jlox/RunCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/iqraalabs/jlox/CommandLineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/levelup/jlox/CommandLineTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/levelup/jlox/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/levelup/jlox/CommandLine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/levelup/jlox/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/levelup/jlox/RunCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/levelup/jlox/CommandLineTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +35,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="module-info" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
@@ -59,6 +72,13 @@
     "Application.run.executor": "Run",
     "Application.test.executor": "Run",
     "JUnit.CLITest.executor": "Run",
+    "JUnit.CommandLineTest.help_command.executor": "Run",
+    "JUnit.TokenizerTest.Given_EmptyScript_WhenParseIt_Then_ReturnEmptyListOfTokens.executor": "Run",
+    "JUnit.TokenizerTest.executor": "Run",
+    "JUnit.TokenizerTest.ignoreComments.executor": "Run",
+    "JUnit.TokenizerTest.tokenizeMultiCharacterOperators.executor": "Run",
+    "JUnit.TokenizerTest.tokenizeStrings.executor": "Run",
+    "JUnit.TokenizerTest.tokenizeTabWhitespaceAndNewLine.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
@@ -80,7 +100,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "editor.preferences.completion",
     "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
   },
@@ -97,6 +117,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.levelup.jlox.vm" />
       <recent name="org.iqraalabs.jlox" />
     </key>
   </component>
@@ -106,91 +127,96 @@
       <command value="run" />
       <command value="list" />
       <command value="help" />
+      <command value="Main -- help" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.help">
-    <configuration name="help" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.iqraalabs.jlox.Main" />
-      <module name="jlox" />
-      <option name="PROGRAM_PARAMETERS" value="help" />
+  <component name="RunManager" selected="JUnit.TokenizerTest">
+    <configuration name="TokenizerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.iqraalabs.jlox.*" />
+          <option name="PATTERN" value="org.levelup.jlox.vm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="list" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="org.iqraalabs.jlox.Main" />
-      <module name="jlox" />
-      <option name="PROGRAM_PARAMETERS" value="list" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.iqraalabs.jlox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="run" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="org.iqraalabs.jlox.Main" />
-      <module name="jlox" />
-      <option name="PROGRAM_PARAMETERS" value="run file.lox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.iqraalabs.jlox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="org.iqraalabs.jlox.Main" />
-      <module name="jlox" />
-      <option name="PROGRAM_PARAMETERS" value="test file.lox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.iqraalabs.jlox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CLITest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jlox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.iqraalabs.jlox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.iqraalabs.jlox" />
-      <option name="MAIN_CLASS_NAME" value="org.iqraalabs.jlox.CLITest" />
+      <option name="PACKAGE_NAME" value="org.levelup.jlox.vm" />
+      <option name="MAIN_CLASS_NAME" value="org.levelup.jlox.vm.TokenizerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.list" />
-      <item itemvalue="Application.run" />
-      <item itemvalue="Application.test" />
-      <item itemvalue="Application.help" />
-      <item itemvalue="JUnit.CLITest" />
-    </list>
+    <configuration name="TokenizerTest.ignoreComments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.levelup.jlox.vm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.levelup.jlox.vm" />
+      <option name="MAIN_CLASS_NAME" value="org.levelup.jlox.vm.TokenizerTest" />
+      <option name="METHOD_NAME" value="ignoreComments" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TokenizerTest.tokenizeMultiCharacterOperators" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.levelup.jlox.vm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.levelup.jlox.vm" />
+      <option name="MAIN_CLASS_NAME" value="org.levelup.jlox.vm.TokenizerTest" />
+      <option name="METHOD_NAME" value="tokenizeMultiCharacterOperators" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TokenizerTest.tokenizeStrings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.levelup.jlox.vm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.levelup.jlox.vm" />
+      <option name="MAIN_CLASS_NAME" value="org.levelup.jlox.vm.TokenizerTest" />
+      <option name="METHOD_NAME" value="tokenizeStrings" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TokenizerTest.tokenizeTabWhitespaceAndNewLine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.levelup.jlox.vm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.levelup.jlox.vm" />
+      <option name="MAIN_CLASS_NAME" value="org.levelup.jlox.vm.TokenizerTest" />
+      <option name="METHOD_NAME" value="tokenizeTabWhitespaceAndNewLine" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.help" />
-        <item itemvalue="JUnit.CLITest" />
+        <item itemvalue="JUnit.TokenizerTest" />
+        <item itemvalue="JUnit.TokenizerTest.tokenizeStrings" />
+        <item itemvalue="JUnit.TokenizerTest.ignoreComments" />
+        <item itemvalue="JUnit.TokenizerTest.tokenizeMultiCharacterOperators" />
+        <item itemvalue="JUnit.TokenizerTest.tokenizeTabWhitespaceAndNewLine" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +239,7 @@
       <workItem from="1725633314807" duration="4795000" />
       <workItem from="1742285743695" duration="43000" />
       <workItem from="1742285790776" duration="81000" />
-      <workItem from="1742285875655" duration="533000" />
+      <workItem from="1742285875655" duration="14416000" />
     </task>
     <servers />
   </component>
@@ -231,5 +257,9 @@
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
