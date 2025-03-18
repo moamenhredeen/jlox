@@ -35,9 +35,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="module-info" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="module-info" />
       </list>
     </option>
   </component>
@@ -239,8 +239,33 @@
       <workItem from="1725633314807" duration="4795000" />
       <workItem from="1742285743695" duration="43000" />
       <workItem from="1742285790776" duration="81000" />
-      <workItem from="1742285875655" duration="14416000" />
+      <workItem from="1742285875655" duration="14748000" />
     </task>
+    <task id="LOCAL-00001" summary="feature(refactor): remove root level sources">
+      <option name="closed" value="true" />
+      <created>1742301488166</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742301488166</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feature(refactor): add two modules vm and cli">
+      <option name="closed" value="true" />
+      <created>1742301516709</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742301516709</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feature(cli): add basic cli project using picocli">
+      <option name="closed" value="true" />
+      <created>1742301549115</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1742301549115</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +278,10 @@
     <MESSAGE value="add main class" />
     <MESSAGE value="define module" />
     <MESSAGE value="update intellij config" />
-    <option name="LAST_COMMIT_MESSAGE" value="update intellij config" />
+    <MESSAGE value="feature(refactor): remove root level sources" />
+    <MESSAGE value="feature(refactor): add two modules vm and cli" />
+    <MESSAGE value="feature(cli): add basic cli project using picocli" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature(cli): add basic cli project using picocli" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
