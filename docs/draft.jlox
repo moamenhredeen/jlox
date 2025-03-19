@@ -1,0 +1,116 @@
+
+// --------------------------------------- primitive data types ---------------------------------------
+
+const x: int = 1
+let x: float = 1 // shadow
+
+let s = "hello world"
+
+
+let s: string = """
+	|aölskdf jasödlkf asdf
+	|alösdfk asödlfkjaö dflkasö lfka
+	| öalsdfkja söldfkja ödlfkasdö fk
+	| asödlfkj asöldkf
+	"""
+
+let t: boolean = true;
+let f: boolean = false;
+
+let c: byte  = 'a' // ??
+
+// --------------------------------------- functions ---------------------------------------
+
+fun add(a: int, b: int): int {
+	return 2 + 2;
+}
+
+
+// function are first class citizen
+let f: fun(int, int) -> int = (a, b)  ->  { // should i change the return style ?
+	return 2 + 2;
+}
+
+let res = f(2,2) // res = 4
+
+
+
+// higerorder functions
+fun power(b: int) -> fun (int) -> int {
+	return fun(n: int) -> int {
+		return b * n;
+	}
+};
+// or let power = fun(b: int) -> fun (n) -> b * n;
+
+
+
+// --------------------------------------- complex data types ---------------------------------------
+
+// struct
+let person: type =  struct {
+	id: int
+	name: string
+}
+
+
+// union type (do i need union keyword ?)
+let input: type =  int | string
+
+
+// the question here, how can represent it in the memory
+let extendedInput: type = int | string | person
+
+
+let admin = struct {
+	id: int
+	name: string
+	get_name: fun() -> string {
+		return this.name
+	}
+
+	set_name: fun(name: string) -> void {
+		this.name = name
+	}
+}
+
+
+
+// --------------------------------------- interfaces ---------------------------------------
+
+let ToString = interface {
+	toString: fun() -> string
+}
+
+
+let p = struct {
+	id: int
+	name: string
+	toString: fun() -> string {
+		return "${this.id} ${this.name}" // string interpoliation
+	}
+}
+
+// should the language be structural typed
+let print = fun (item: ToString) -> void {
+	item.toString()
+}
+
+// --------------------------------------- operators ---------------------------------------
+
+let x = 2 - 2
+let x = 2 + 2
+let x = 2 * 2
+let x = 2 / 2
+let x += 2
+let x -= 2
+let x *= 2
+let x /= 2
+--x // only the epxressions
+x == y
+x != y
+x and y
+x or y
+not x
+x xor y
+
