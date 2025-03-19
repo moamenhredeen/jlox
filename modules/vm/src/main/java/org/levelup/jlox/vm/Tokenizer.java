@@ -1,10 +1,9 @@
 package org.levelup.jlox.vm;
 
-import java.time.Year;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Consumer;
 
+/// responsible for converting a stream of character into a stream of tokens
 public class Tokenizer {
     public List<Token> scan(String source) {
         List<Token> tokens = new ArrayList<>();
@@ -80,6 +79,46 @@ public class Tokenizer {
                         }
                         current++;
                     }
+                }
+                case char i when i >= '0' && i <= '9' -> {
+                    while (current + 1 < source.length() && source.charAt(current + 1) >= '0' && source.charAt(current + 1) <= '9' ) {
+                        current++;
+                    }
+                    if (current + 1 < source.length() && source.charAt(current + 1) == '.') {
+                        do{
+                            current++;
+                        } while (current + 1 < source.length() && source.charAt(current + 1) >= '0' && source.charAt(current + 1) <= '9' );
+                    }
+                    yield new Token(source.substring(start, current + 1), line, TokenType.NUMBER);
+                }
+                case char i when (i >= 'a' && i <= 'z') || (i >= 'A' && i <= 'Z') || i == '_' -> {
+                    while (current + 1 < source.length() &&
+                            ((source.charAt(current + 1) >= 'a' && source.charAt(current + 1) <= 'z')
+                            || (source.charAt(current + 1) >= 'A' && source.charAt(current + 1) <= 'Z')
+                            || (source.charAt(current + 1) >= '0' && source.charAt(current + 1) <= '9')
+                            || source.charAt(current + 1) == '_')) {
+                        current++;
+                    }
+
+                    var lexeme = source.substring(start, current + 1);
+                    yield switch (lexeme) {
+                        case "and" -> new Token(lexeme, line, TokenType.AND);
+                        case "or" -> new Token(lexeme, line, TokenType.OR);
+                        case "true" -> new Token(lexeme, line, TokenType.TRUE);
+                        case "false" -> new Token(lexeme, line, TokenType.FALSE);
+                        case "while" -> new Token(lexeme, line, TokenType.WHILE);
+                        case "for" -> new Token(lexeme, line, TokenType.FOR);
+                        case "if" -> new Token(lexeme, line, TokenType.IF);
+                        case "else" -> new Token(lexeme, line, TokenType.ELSE);
+                        case "var" -> new Token(lexeme, line, TokenType.VAR);
+                        case "fun" -> new Token(lexeme, line, TokenType.FUN);
+                        case "return" -> new Token(lexeme, line, TokenType.RETURN);
+                        case "class" -> new Token(lexeme, line, TokenType.CLASS);
+                        case "this" -> new Token(lexeme, line, TokenType.THIS);
+                        case "super" -> new Token(lexeme, line, TokenType.SUPER);
+                        case "print" -> new Token(lexeme, line, TokenType.PRINT);
+                        default -> new Token(lexeme, line, TokenType.IDENTIFIER);
+                    };
                 }
                 case ' ', '\t', '\r' -> null;
                 case '\n' -> {

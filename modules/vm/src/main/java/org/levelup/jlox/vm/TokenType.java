@@ -33,7 +33,7 @@ public enum TokenType {
     FOR,
     WHILE,
     VAR,
-    FN,
+    FUN,
     RETURN,
     CLASS,
     THIS,
