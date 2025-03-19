@@ -43,7 +43,7 @@ class TokenizerTest {
                 new Token("{", 1, TokenType.LEFT_BRACE),
                 new Token("}", 1, TokenType.RIGHT_BRACE),
                 new Token(",", 1, TokenType.COMMA),
-                new Token(";", 1, TokenType.SIMICOLON),
+                new Token(";", 1, TokenType.SEMICOLON),
                 new Token("+", 1, TokenType.PLUS),
                 new Token("-", 1, TokenType.MINUS),
                 new Token("*", 1, TokenType.STAR),
@@ -143,12 +143,12 @@ class TokenizerTest {
                 new Token("x", 2, TokenType.IDENTIFIER),
                 new Token("=", 2, TokenType.EQUAL),
                 new Token("10", 2, TokenType.NUMBER),
-                new Token(";", 2, TokenType.SIMICOLON),
+                new Token(";", 2, TokenType.SEMICOLON),
                 new Token("print", 3, TokenType.PRINT),
                 new Token("(", 3, TokenType.LEFT_PAREN),
                 new Token("x", 3, TokenType.IDENTIFIER),
                 new Token(")", 3, TokenType.RIGHT_PAREN),
-                new Token(";", 3, TokenType.SIMICOLON),
+                new Token(";", 3, TokenType.SEMICOLON),
                 new Token("", 4, TokenType.EOF)
         ), tokens);
     }
@@ -164,12 +164,12 @@ class TokenizerTest {
                 new Token("x", 2, TokenType.IDENTIFIER),
                 new Token("=", 2, TokenType.EQUAL),
                 new Token("10", 2, TokenType.NUMBER),
-                new Token(";", 2, TokenType.SIMICOLON),
+                new Token(";", 2, TokenType.SEMICOLON),
                 new Token("print", 2, TokenType.PRINT),
                 new Token("(", 2, TokenType.LEFT_PAREN),
                 new Token("x", 2, TokenType.IDENTIFIER),
                 new Token(")", 2, TokenType.RIGHT_PAREN),
-                new Token(";", 2, TokenType.SIMICOLON),
+                new Token(";", 2, TokenType.SEMICOLON),
                 new Token("", 3, TokenType.EOF)
         ), tokens);
     }

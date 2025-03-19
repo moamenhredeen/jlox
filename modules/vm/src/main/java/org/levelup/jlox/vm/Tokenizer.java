@@ -19,7 +19,7 @@ public class Tokenizer {
                 case '{' -> new Token("{", line, TokenType.LEFT_BRACE);
                 case '}' -> new Token("}", line, TokenType.RIGHT_BRACE);
                 case ',' -> new Token(",", line, TokenType.COMMA);
-                case ';' -> new Token(";", line, TokenType.SIMICOLON);
+                case ';' -> new Token(";", line, TokenType.SEMICOLON);
                 case '-' -> new Token("-", line, TokenType.MINUS);
                 case '+' -> new Token("+", line, TokenType.PLUS);
                 case '*' -> new Token("*", line, TokenType.STAR);
