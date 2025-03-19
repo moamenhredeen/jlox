@@ -5,27 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbc07560-0e8d-4c37-9b43-2c3aa28565ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/modules/cli/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/cli/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/cli/src/main/java/org/levelup/jlox/cli/EvalCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/cli/src/main/java/org/levelup/jlox/cli/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/cli/src/main/java/org/levelup/jlox/cli/ReplCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/cli/src/main/java/org/levelup/jlox/cli/RootCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/cli/src/main/java/org/levelup/jlox/cli/RunCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/vm/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/vm/src/main/java/org/levelup/jlox/vm/Token.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/vm/src/main/java/org/levelup/jlox/vm/TokenType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/vm/src/main/java/org/levelup/jlox/vm/Tokenizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/vm/src/test/java/org/levelup/jlox/vm/TokenizerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/levelup/jlox/Command.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/levelup/jlox/CommandLine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/levelup/jlox/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/levelup/jlox/RunCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/levelup/jlox/CommandLineTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/vm/src/main/java/org/levelup/jlox/vm/Tokenizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/vm/src/main/java/org/levelup/jlox/vm/Tokenizer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +58,7 @@
     "JUnit.TokenizerTest.executor": "Run",
     "JUnit.TokenizerTest.ignoreComments.executor": "Run",
     "JUnit.TokenizerTest.tokenizeMultiCharacterOperators.executor": "Run",
+    "JUnit.TokenizerTest.tokenizeNumbers.executor": "Run",
     "JUnit.TokenizerTest.tokenizeStrings.executor": "Run",
     "JUnit.TokenizerTest.tokenizeTabWhitespaceAndNewLine.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -97,9 +79,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "editor.preferences.completion",
     "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
@@ -141,7 +123,9 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.levelup.jlox.vm" />
       <option name="MAIN_CLASS_NAME" value="org.levelup.jlox.vm.TokenizerTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea --enable-preview" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -178,6 +162,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TokenizerTest.tokenizeNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.levelup.jlox.vm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.levelup.jlox.vm" />
+      <option name="MAIN_CLASS_NAME" value="org.levelup.jlox.vm.TokenizerTest" />
+      <option name="METHOD_NAME" value="tokenizeNumbers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TokenizerTest.tokenizeStrings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vm" />
       <extension name="coverage">
@@ -194,37 +194,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TokenizerTest.tokenizeTabWhitespaceAndNewLine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="vm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.levelup.jlox.vm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.levelup.jlox.vm" />
-      <option name="MAIN_CLASS_NAME" value="org.levelup.jlox.vm.TokenizerTest" />
-      <option name="METHOD_NAME" value="tokenizeTabWhitespaceAndNewLine" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="JUnit.TokenizerTest" />
+      <item itemvalue="JUnit.TokenizerTest.ignoreComments" />
+      <item itemvalue="JUnit.TokenizerTest.tokenizeMultiCharacterOperators" />
+      <item itemvalue="JUnit.TokenizerTest.tokenizeNumbers" />
+      <item itemvalue="JUnit.TokenizerTest.tokenizeStrings" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TokenizerTest" />
+        <item itemvalue="JUnit.TokenizerTest.tokenizeNumbers" />
         <item itemvalue="JUnit.TokenizerTest.tokenizeStrings" />
         <item itemvalue="JUnit.TokenizerTest.ignoreComments" />
         <item itemvalue="JUnit.TokenizerTest.tokenizeMultiCharacterOperators" />
-        <item itemvalue="JUnit.TokenizerTest.tokenizeTabWhitespaceAndNewLine" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.59" />
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.59" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
       </set>
     </attachedChunks>
   </component>
@@ -239,7 +230,11 @@
       <workItem from="1725633314807" duration="4795000" />
       <workItem from="1742285743695" duration="43000" />
       <workItem from="1742285790776" duration="81000" />
-      <workItem from="1742285875655" duration="14748000" />
+      <workItem from="1742285875655" duration="14851000" />
+      <workItem from="1742325241806" duration="1783000" />
+      <workItem from="1742363371637" duration="133000" />
+      <workItem from="1742363545492" duration="181000" />
+      <workItem from="1742363764793" duration="3706000" />
     </task>
     <task id="LOCAL-00001" summary="feature(refactor): remove root level sources">
       <option name="closed" value="true" />
@@ -265,7 +260,23 @@
       <option name="project" value="LOCAL" />
       <updated>1742301549115</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feature(refactor): add module file to vm and update module of cli">
+      <option name="closed" value="true" />
+      <created>1742301690858</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1742301690858</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feature(vm): start working on the tokenizer">
+      <option name="closed" value="true" />
+      <created>1742301723084</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742301723084</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +292,9 @@
     <MESSAGE value="feature(refactor): remove root level sources" />
     <MESSAGE value="feature(refactor): add two modules vm and cli" />
     <MESSAGE value="feature(cli): add basic cli project using picocli" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature(cli): add basic cli project using picocli" />
+    <MESSAGE value="feature(refactor): add module file to vm and update module of cli" />
+    <MESSAGE value="feature(vm): start working on the tokenizer" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature(vm): start working on the tokenizer" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
